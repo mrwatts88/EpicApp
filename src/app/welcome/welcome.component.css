@@ -1,0 +1,14 @@
+.btn-block{
+    height: 25px;
+    position: relative;
+    background: #808080
+  }
+  
+  .glyphicon-triangle-bottom{
+    position: absolute;
+    top: 4px;
+  }
+
+  .full-view-height{
+    min-height: 100vh;
+  }

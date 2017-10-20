@@ -1,0 +1,9 @@
+.resume-background{
+    background-color: #cccccc;
+    background-image: url("../../assets/resumeBg.png");
+    margin-top: -20px;
+}
+
+.twenty-px-padding-top{
+    padding-top:20px;
+}
