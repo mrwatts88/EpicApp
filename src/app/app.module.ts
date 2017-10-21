@@ -13,6 +13,7 @@ import { WhatIDoComponent } from './what-i-do/what-i-do.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ResumeComponent } from './resume/resume.component';
 import { WhoaComponent } from './whoa/whoa.component';
+import { P5Component } from './p5/p5.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -39,7 +40,8 @@ const appRoutes: Routes = [
     WelcomeComponent,
     ResumeComponent,
     WhoaComponent,
-    PdfViewerComponent
+    PdfViewerComponent,
+    P5Component
   ],
   imports: [
     RouterModule.forRoot(

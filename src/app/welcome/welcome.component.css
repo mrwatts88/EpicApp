@@ -1,7 +1,8 @@
 .btn-block{
     height: 25px;
     position: relative;
-    background: #808080
+    background: #222222;
+    border: 1px solid black;
   }
   
   .glyphicon-triangle-bottom{

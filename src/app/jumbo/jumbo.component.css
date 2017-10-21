@@ -1,13 +1,25 @@
 .jumbotron {
+    background-image: url("../../assets/aoeu.png");
+    background-size: 100%;
+    /* background: rgba(111,75,145,0.2); */
     
-    background: #6F4B91;
-    color: white;
     padding-bottom: 80px;
     margin-bottom: 0;
   }
 
+.jumbotron h1{
+  -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: #363636;
+}
+
 .jumbotron .btn-primary {
-  background: grey;
+  background: #222222;
+  border-color: black; 
+}
+
+.jumbotron .btn-default {
+  background: white;
   border-color: black; 
 }
 
@@ -15,8 +27,12 @@
   background: darkgray; 
 }
 
+.jumbotron .btn-default:hover {
+  background: darkgray; 
+}
+
 .jumbotron p {
-  color: #d9ccee;
+  color: #363636;
   max-width: 75%;
   margin: 1em auto 2em;
  }
