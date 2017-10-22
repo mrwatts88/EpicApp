@@ -12,7 +12,13 @@ and (orientation: landscape) {
     float: left;
 
 
-}}
+}
+
+.navbar-nav{
+    margin: 0px -15px !important;
+  }
+
+}
 
 /* portrait */
 @media screen 
