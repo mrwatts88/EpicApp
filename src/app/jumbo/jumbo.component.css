@@ -5,13 +5,14 @@
     
     padding-bottom: 80px;
     margin-bottom: 0;
-    height: 88vh;
+    margin-top: -20px;
+    height: 88vh;  
   }
 
 .jumbotron h1{
   -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
-    color: #464444;
+    color: #464444;    
 }
 
 .jumbotron .btn-primary {
@@ -38,10 +39,6 @@
   margin: 1em auto 2em;
  }
 
-.jumbotron {
-  margin-top: -20px;
- }
-
 .jumbotron .lang-logo {
   display: block;
   background: white;
@@ -55,4 +52,89 @@
 
 .jumbotron .lang-logo img {    
   max-width: 100%;
+}
+
+
+
+/* Portrait */
+@media screen 
+and (max-width: 360px) 
+and (max-height: 640px) 
+and (orientation: portrait) {
+
+  .jumbotron {
+    background-image: url("../../assets/aoeu.png");
+    background-size: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 70vh;  
+  }
+
+.jumbotron h1{
+  -webkit-text-stroke-width: 0px;
+    color: black;    
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+.jumbotron p{
+  color: #464444;    
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.jumbotron .btn-default {
+  background: white;
+  border-color: black; 
+  margin-bottom: 10px;
+}
+
+}
+
+/* Landscape */
+@media screen 
+and (max-width: 640px) 
+and (max-height: 360px) 
+and (orientation: landscape) {
+
+ .jumbotron {
+    background-image: url("../../assets/aoeu.png");
+    background-size: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 75vh;  
+  }
+
+.jumbotron h1{
+  -webkit-text-stroke-width: 0px;
+    color: black;    
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top:30px;
+    margin-left:125px;
+    
+}
+
+.jumbotron p{
+  color: #464444;    
+  font-size: 1em;
+  font-weight: bold;
+ 
+  margin-left:125px;
+
+}
+
+.jumbotron .btn-default {
+  background: white;
+  border-color: black; 
+
+}
+
+.jumbotron .lang-logo {
+ float:left;
+ margin-top:30px;
+}
+
 }
