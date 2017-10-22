@@ -1,3 +1,34 @@
-<div class="container">
-  <div id='container'></div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <h3>
+        What's going on here?
+      </h3>
+      <p>
+        This is a simulation of evolution using a genetic algorithm that I implemented in JavaScript.
+        <br>
+        <br>
+        The first generation of wanderers are exactly that.  They have 2000 random moves assigned upon their
+        creation.  After all 2000 moves, the wanderer expires.
+        <br>
+        <br>
+        When a generation is about to leave our existence,
+        each wanderer is given value based on the performance (In this case, the goal is to get to the top right corner).  This level of performance is known as fitness, and is
+        determined using a fitness function that I wrote.  The wanderers with a fitness score in the top 50% are selected to pass
+        on their DNA, which in this case is their 2000 move set. 
+        <br>
+        <br>
+        A new generation is born with DNA very similar to the top 
+        peformers of the previous generation.
+        There are some more intricacies taken into account to prevent the population from degrading to a very poor
+        performance.  A lot more can be done to improve their performance and I plan to make this more 
+        interactive to give visitors the ability to control the algorithm's variables.
+      </p>
+    </div>
+    <div class="col-md-8">
+      <div id='container'></div>
+
+    </div>
+
+  </div>
 </div>

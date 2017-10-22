@@ -1,0 +1,25 @@
+.color-1{
+    background: #DADCE2;
+    height: 100vh;
+    text-align: left;
+    padding: 20px 50px 50px 50px;  
+}
+
+.color-2{
+    background: rgb(240, 243, 237);
+    height: 100vh;
+    text-align: left;
+    padding: 20px 50px 50px 50px;   
+}
+
+.color-3{
+    background: #DADCE2;
+    height: 100vh;
+    text-align: left;
+    padding: 20px 50px 50px 50px;  
+}
+
+.negative-twenty-margin{
+    margin-top:-20px;
+    overflow: hidden;  
+}

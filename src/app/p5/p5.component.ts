@@ -185,9 +185,9 @@ export class P5Component implements OnInit {
         let parentVector = parent.getMovements()[i];
 
         if (Math.random() < 0.02) {
-          movements[i] = this.p5ref.createVector(this.p5ref.random(-P5Component.STEP_SIZE, P5Component.STEP_SIZE));
+          movements[i] = this.p5ref.createVector(this.p5ref.random(-P5Component.STEP_SIZE, P5Component.STEP_SIZE*1.05));
         } else {
-          movements[i] = this.p5ref.createVector(this.p5ref.random(parentVector.x - 1, parentVector.x + 1), this.p5ref.random(parentVector.y - 1, parentVector.y + 1));
+          movements[i] = this.p5ref.createVector(this.p5ref.random(parentVector.x, parentVector.x + 0.5), this.p5ref.random(parentVector.y - 1, parentVector.y + 1));
         }
       }
       this.learners.push(new Learner(8, this.p5ref.height - 8, 0, movements, this.p5ref, this.home));

@@ -8,9 +8,9 @@
   }
 
 .jumbotron h1{
-  -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    color: #363636;
+  -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    color: #464444;
 }
 
 .jumbotron .btn-primary {
@@ -32,7 +32,7 @@
 }
 
 .jumbotron p {
-  color: #363636;
+  color: black;
   max-width: 75%;
   margin: 1em auto 2em;
  }

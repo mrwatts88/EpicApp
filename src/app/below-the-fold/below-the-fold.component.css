@@ -1,0 +1,13 @@
+.jumbotron{
+    margin-top:20px;
+    margin-bottom: 20px;
+    padding: 11px;
+    text-align: center;
+}
+
+.card{
+    width: fit-content;
+    margin: auto;
+    
+
+}
