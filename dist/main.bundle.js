@@ -245,7 +245,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/jumbo/jumbo.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron text-center\">\n  <div class=\"container\">\n    <span class=\"lang-logo\">\n      <img style='height: 100%; width: 100%; object-fit: contain' src=\"./assets/matt.png\">      \n    </span>\n    <h1>Welcome, Epic! Thanks for taking the time to visit.</h1>\n    <p><strong>This is just a way for me to introduce myself, and provide you with a small view into my life.  Have a look around.</strong></p>\n    <a routerLink=\"/whoiam\" class=\"btn btn-lg btn-default\" ><span class=\"glyphicon glyphicon-info-sign\"></span> Learn about who I am...</a>\n    <a routerLink=\"/whatido\" class=\"btn btn-lg btn-primary\" ><span class=\"glyphicon glyphicon-info-sign\"></span> Learn about what I do...</a>\n  </div>\n</div>  "
+module.exports = "<div class=\"jumbotron text-center\">\r\n  <div class=\"container\">\r\n    <span class=\"lang-logo\">\r\n      <img style='height: 100%; width: 100%; object-fit: contain' src=\"./assets/matt.png\">      \r\n    </span>\r\n    <h1>Welcome, Epic! Thanks for taking the time to visit.</h1>\r\n    <p><strong>This is just a way for me to introduce myself, and provide you with a small view into my life.  Have a look around.</strong></p>\r\n    <a routerLink=\"/whoiam\" class=\"btn btn-lg btn-default\" ><span class=\"glyphicon glyphicon-info-sign\"></span> Learn about who I am...</a>\r\n    <a routerLink=\"/whatido\" class=\"btn btn-lg btn-primary\" ><span class=\"glyphicon glyphicon-info-sign\"></span> Learn about what I do...</a>\r\n  </div>\r\n</div>  "
 
 /***/ }),
 
@@ -724,7 +724,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/welcome/welcome.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-jumbo></app-jumbo>\n<a scrollTo href=\"#scrollToMe\" class=\"btn btn-primary btn-lg btn-block\"><span class=\"glyphicon glyphicon-triangle-bottom\"></span></a>\n<div id=\"scrollToMe\" class=\"container full-view-height\">\n<app-below-the-fold></app-below-the-fold>\n</div>"
+module.exports = "<app-jumbo></app-jumbo>\r\n<a scrollTo href=\"#scrollToMe\" class=\"btn btn-primary btn-lg btn-block\"><span class=\"glyphicon glyphicon-triangle-bottom\"></span></a>\r\n<div id=\"scrollToMe\" class=\"container full-view-height\">\r\n<app-below-the-fold></app-below-the-fold>\r\n</div>"
 
 /***/ }),
 
@@ -772,7 +772,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".color-1{\r\n    background: #DADCE2;\r\n    height: 100vh;\r\n    text-align: left;\r\n    padding: 20px 50px 50px 50px;  \r\n}\r\n\r\n.color-2{\r\n    background: rgb(240, 243, 237);\r\n    height: 100vh;\r\n    text-align: left;\r\n    padding: 20px 50px 50px 50px;   \r\n}\r\n\r\n.color-3{\r\n    background: #DADCE2;\r\n    height: 100vh;\r\n    text-align: left;\r\n    padding: 20px 50px 50px 50px;  \r\n}\r\n\r\n.negative-twenty-margin{\r\n    margin-top:-20px;\r\n    overflow: hidden;  \r\n}", ""]);
+exports.push([module.i, ".color-1{\r\n    background: #DADCE2;\r\n    min-height: 100vh;\r\n    text-align: left;\r\n    padding: 20px 50px 50px 50px;  \r\n}\r\n\r\n.color-2{\r\n    background: rgb(240, 243, 237);\r\n    min-height: 100vh;\r\n    text-align: left;\r\n    padding: 20px 50px 50px 50px;   \r\n}\r\n\r\n.color-3{\r\n    background: #DADCE2;\r\n    min-height: 100vh;\r\n    text-align: left;\r\n    padding: 20px 50px 50px 50px;  \r\n}\r\n\r\n.negative-twenty-margin{\r\n    margin-top:-20px;\r\n    overflow: hidden;  \r\n}", ""]);
 
 // exports
 
