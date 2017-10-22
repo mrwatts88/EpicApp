@@ -13,3 +13,15 @@ and (orientation: landscape) {
 
 
 }}
+
+/* portrait */
+@media screen 
+and (max-width: 360px) 
+and (max-height: 640px) 
+and (orientation: portrait) {
+
+.nav>li{
+    float: left;
+
+
+}}
