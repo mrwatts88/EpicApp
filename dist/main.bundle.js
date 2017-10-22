@@ -649,7 +649,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".resume-background{\r\n    background-color: #cccccc;\r\n    background-image: url(" + __webpack_require__("../../../../../src/assets/resumeBg.png") + ");\r\n    margin-top: -20px;\r\n}\r\n\r\n.twenty-px-padding-top{\r\n    padding-top:20px;\r\n}", ""]);
+exports.push([module.i, ".resume-background{\r\n    background-color: #cccccc;\r\n    background-image: url(" + __webpack_require__("../../../../../src/assets/resumeBg.png") + ");\r\n    margin-top: -20px;\r\n}\r\n\r\n.twenty-px-padding-top{\r\n    padding-top:20px;\r\n}\r\n\r\n/* Landscape */\r\n@media screen \r\nand (max-width: 640px) \r\nand (max-height: 360px) \r\nand (orientation: landscape) {\r\n    .twenty-px-padding-top{\r\n        padding-top:20px;\r\n      \r\n    }\r\n\r\n}", ""]);
 
 // exports
 
@@ -662,7 +662,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/resume/resume.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"resume-background\">\n  <pdf-viewer class=\"twenty-px-padding-top\" [src]=\"pdfSrc\" [render-text]=\"true\" style=\"display: block;\"></pdf-viewer>\n</div>"
+module.exports = "<div class=\"resume-background\">\n  <div class=\"container\">\n\n    <pdf-viewer class=\"twenty-px-padding-top\" [src]=\"pdfSrc\" [render-text]=\"true\" [original-size]=\"false\" style=\"display: block;\"></pdf-viewer>\n  </div>\n</div>"
 
 /***/ }),
 

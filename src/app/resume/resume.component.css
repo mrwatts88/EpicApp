@@ -7,3 +7,15 @@
 .twenty-px-padding-top{
     padding-top:20px;
 }
+
+/* Landscape */
+@media screen 
+and (max-width: 640px) 
+and (max-height: 360px) 
+and (orientation: landscape) {
+    .twenty-px-padding-top{
+        padding-top:20px;
+      
+    }
+
+}
