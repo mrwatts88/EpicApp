@@ -1,12 +1,9 @@
 .jumbotron {
     background-image: url("../../assets/aoeu.png");
-    background-size: 100%;
-    /* background: rgba(111,75,145,0.2); */
-    
-    padding-bottom: 80px;
+    background-size: 100%;   
     margin-bottom: 0;
-    margin-top: -20px;
-    height: 88vh;  
+    margin-top: -20px;   
+    height: calc(100vh - 52px); 
   }
 
 .jumbotron h1{
@@ -54,6 +51,19 @@
   max-width: 100%;
 }
 
+.jumbotron .btn-block{
+  position: absolute;
+  bottom: 2px;
+  height: 25px;
+  border-radius: 0px;
+}
+
+ 
+.glyphicon-triangle-bottom{
+
+top:-3px;
+}
+
 
 
 /* Portrait */
@@ -67,7 +77,7 @@ and (orientation: portrait) {
     background-size: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
-    height: 84vh;  
+     
   }
 
 .jumbotron h1{
@@ -105,7 +115,8 @@ and (orientation: landscape) {
     background-size: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
-    height: 72vh;  
+    height: calc(100vh - 43px); 
+
   }
 
 .jumbotron h1{

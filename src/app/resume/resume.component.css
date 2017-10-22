@@ -6,7 +6,9 @@
 
 .twenty-px-padding-top{
     padding-top:20px;
+    padding-bottom:35px;
 }
+
 
 /* Landscape */
 @media screen 

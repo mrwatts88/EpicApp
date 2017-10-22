@@ -6,3 +6,7 @@ and (orientation: landscape) {
     min-height: 30px !important;
   }
 }
+
+.full-screen-height{
+  height: 100vh;
+}
