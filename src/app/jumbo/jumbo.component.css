@@ -4,6 +4,7 @@
     margin-bottom: 0;
     margin-top: -20px;   
     height: calc(100vh - 52px); 
+    padding-top:0px;
   }
 
 .jumbotron h1{
@@ -65,7 +66,7 @@ top:-6px;
 }
 
 .buffer{
-  height: 5%; 
+  height: calc((100vh - 80px)*.13); 
 }
 
 
