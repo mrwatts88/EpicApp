@@ -4,9 +4,16 @@ const app = express();
 // Run the app by serving the static files
 // in the dist directory
 app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '/downloads'));
+
 
 const path = require('path');
-// ...
+
+app.get('/resumedownload', (req,res)=>{
+  console.log('hththeee');
+  res.download(__dirname + '/downloads/Resume.pdf', 'Resume.pdf');
+})
+
 // For all GET requests, send back index.html
 // so that PathLocationStrategy can be used
 app.get('/*', function(req, res) {

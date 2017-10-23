@@ -1,6 +1,8 @@
 <div class="resume-background">
   <div class="container">
-
+    <div class="btn btn-default margin-top" (click)="download()">
+      Download.
+    </div>
     <pdf-viewer class="twenty-px-padding-top" [src]="pdfSrc" [render-text]="true" [original-size]="false" style="display: block;"></pdf-viewer>
   </div>
 </div>

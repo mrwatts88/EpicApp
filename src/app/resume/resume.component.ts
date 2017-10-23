@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpServiceService } from '../http-service.service';
+import { saveAs } from 'file-saver';
 
 @Component({
   selector: 'app-resume',
@@ -6,12 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resume.component.css']
 })
 export class ResumeComponent implements OnInit {
+  
+  pdfSrc: string = '../../assets/Resume.pdf';
 
-  constructor() { }
-
+  constructor(private httpServ:HttpServiceService) { }
+  
   ngOnInit() {
   }
 
-  pdfSrc: string = '../../assets/Resume.pdf';
-
+  private download(){
+    this.httpServ.getResume().subscribe(res =>{
+      saveAs(res,"MatthewWattsResume.pdf");
+      let fileURL = URL.createObjectURL(res);
+      window.open(fileURL);
+  });
+  }
 }

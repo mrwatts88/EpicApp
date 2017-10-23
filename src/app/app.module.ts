@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { ScrollToModule } from 'ng2-scroll-to';
 import { RouterModule, Routes } from '@angular/router';
 import { PdfViewerComponent } from 'ng2-pdf-viewer';
+import { HttpServiceService } from './http-service.service';
+import { HttpModule } from '@angular/http'
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -14,6 +16,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ResumeComponent } from './resume/resume.component';
 import { WhoaComponent } from './whoa/whoa.component';
 import { P5Component } from './p5/p5.component';
+
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -49,9 +52,10 @@ const appRoutes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     ),
     BrowserModule,
+    HttpModule,
     ScrollToModule.forRoot()
   ],
-  providers: [],
+  providers: [ HttpServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

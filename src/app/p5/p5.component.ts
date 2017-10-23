@@ -37,7 +37,7 @@ export class P5Component implements OnInit {
       this.p5ref.setup = () => {
         this.p5ref.frameRate(100);
         let width = document.getElementById("container").offsetWidth
-        this.p5ref.createCanvas(width, document.documentElement.clientHeight - 100);
+        this.p5ref.createCanvas(width, width*.65);
         for (let i = 0; i < P5Component.NUM_OBSTACLES; i++) {
           this.obstacles.push(new Obstacle(this.p5ref.width * (1 / (P5Component.NUM_OBSTACLES + 1)) * (i + 1), this.p5ref));;
         }
@@ -77,7 +77,7 @@ export class P5Component implements OnInit {
 
     this.p5ref.windowResized = () => {
       let width = document.getElementById("container").offsetWidth
-      this.p5ref.resizeCanvas(width, document.documentElement.clientHeight - 100);
+      this.p5ref.resizeCanvas(width, width*.65);
       this.p5ref.background(0);
       this.drawObstacles();
     }
@@ -283,7 +283,7 @@ class Obstacle {
   constructor(posX, p5ref) {
     this.posX = posX;
     this.p5ref = p5ref;
-    this.openingHeight = this.p5ref.random(100, document.documentElement.clientHeight - 200);
+    this.openingHeight = this.p5ref.random(.30*(this.p5ref.height), this.p5ref.height - .30*(this.p5ref.height));
   }
 
   private posX: number;
@@ -299,7 +299,7 @@ class Obstacle {
   }
 
   public draw() {
-    this.p5ref.rect(this.posX, 0, 15, this.openingHeight - 100);
-    this.p5ref.rect(this.posX, this.openingHeight + 100, 15, this.p5ref.height);
+    this.p5ref.rect(this.posX, 0, 15, this.openingHeight - .30*(this.p5ref.height));
+    this.p5ref.rect(this.posX, this.openingHeight + .30*(this.p5ref.height), 15, this.p5ref.height);
   }
 }

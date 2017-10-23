@@ -9,6 +9,12 @@
     padding-bottom:45px;
 }
 
+.margin-top{
+    margin-top: 20px;
+    background: white;
+    border-color: black;
+}
+
 
 /* Landscape */
 @media screen 

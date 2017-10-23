@@ -85,16 +85,18 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_pdf_viewer__ = __webpack_require__("../../../../ng2-pdf-viewer/dist/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_pdf_viewer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_ng2_pdf_viewer__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__jumbo_jumbo_component__ = __webpack_require__("../../../../../src/app/jumbo/jumbo.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__below_the_fold_below_the_fold_component__ = __webpack_require__("../../../../../src/app/below-the-fold/below-the-fold.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__who_i_am_who_i_am_component__ = __webpack_require__("../../../../../src/app/who-i-am/who-i-am.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__what_i_do_what_i_do_component__ = __webpack_require__("../../../../../src/app/what-i-do/what-i-do.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__welcome_welcome_component__ = __webpack_require__("../../../../../src/app/welcome/welcome.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__resume_resume_component__ = __webpack_require__("../../../../../src/app/resume/resume.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__whoa_whoa_component__ = __webpack_require__("../../../../../src/app/whoa/whoa.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__p5_p5_component__ = __webpack_require__("../../../../../src/app/p5/p5.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__http_service_service__ = __webpack_require__("../../../../../src/app/http-service.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__jumbo_jumbo_component__ = __webpack_require__("../../../../../src/app/jumbo/jumbo.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__below_the_fold_below_the_fold_component__ = __webpack_require__("../../../../../src/app/below-the-fold/below-the-fold.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__who_i_am_who_i_am_component__ = __webpack_require__("../../../../../src/app/who-i-am/who-i-am.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__what_i_do_what_i_do_component__ = __webpack_require__("../../../../../src/app/what-i-do/what-i-do.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__welcome_welcome_component__ = __webpack_require__("../../../../../src/app/welcome/welcome.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__resume_resume_component__ = __webpack_require__("../../../../../src/app/resume/resume.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__whoa_whoa_component__ = __webpack_require__("../../../../../src/app/whoa/whoa.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__p5_p5_component__ = __webpack_require__("../../../../../src/app/p5/p5.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -116,12 +118,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 var appRoutes = [
-    { path: 'welcome', component: __WEBPACK_IMPORTED_MODULE_11__welcome_welcome_component__["a" /* WelcomeComponent */] },
-    { path: 'whoiam', component: __WEBPACK_IMPORTED_MODULE_9__who_i_am_who_i_am_component__["a" /* WhoIAmComponent */] },
-    { path: 'whatido', component: __WEBPACK_IMPORTED_MODULE_10__what_i_do_what_i_do_component__["a" /* WhatIDoComponent */] },
-    { path: 'resume', component: __WEBPACK_IMPORTED_MODULE_12__resume_resume_component__["a" /* ResumeComponent */] },
-    { path: 'whoa', component: __WEBPACK_IMPORTED_MODULE_13__whoa_whoa_component__["a" /* WhoaComponent */] },
+    { path: 'welcome', component: __WEBPACK_IMPORTED_MODULE_13__welcome_welcome_component__["a" /* WelcomeComponent */] },
+    { path: 'whoiam', component: __WEBPACK_IMPORTED_MODULE_11__who_i_am_who_i_am_component__["a" /* WhoIAmComponent */] },
+    { path: 'whatido', component: __WEBPACK_IMPORTED_MODULE_12__what_i_do_what_i_do_component__["a" /* WhatIDoComponent */] },
+    { path: 'resume', component: __WEBPACK_IMPORTED_MODULE_14__resume_resume_component__["a" /* ResumeComponent */] },
+    { path: 'whoa', component: __WEBPACK_IMPORTED_MODULE_15__whoa_whoa_component__["a" /* WhoaComponent */] },
     {
         path: '',
         redirectTo: 'welcome',
@@ -136,26 +140,27 @@ var AppModule = (function () {
 AppModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_6__navbar_navbar_component__["a" /* NavbarComponent */],
-            __WEBPACK_IMPORTED_MODULE_7__jumbo_jumbo_component__["a" /* JumboComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__below_the_fold_below_the_fold_component__["a" /* BelowTheFoldComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__who_i_am_who_i_am_component__["a" /* WhoIAmComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__what_i_do_what_i_do_component__["a" /* WhatIDoComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__welcome_welcome_component__["a" /* WelcomeComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__resume_resume_component__["a" /* ResumeComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__whoa_whoa_component__["a" /* WhoaComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__navbar_navbar_component__["a" /* NavbarComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__jumbo_jumbo_component__["a" /* JumboComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__below_the_fold_below_the_fold_component__["a" /* BelowTheFoldComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__who_i_am_who_i_am_component__["a" /* WhoIAmComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__what_i_do_what_i_do_component__["a" /* WhatIDoComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__welcome_welcome_component__["a" /* WelcomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__resume_resume_component__["a" /* ResumeComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__whoa_whoa_component__["a" /* WhoaComponent */],
             __WEBPACK_IMPORTED_MODULE_4_ng2_pdf_viewer__["PdfViewerComponent"],
-            __WEBPACK_IMPORTED_MODULE_14__p5_p5_component__["a" /* P5Component */]
+            __WEBPACK_IMPORTED_MODULE_16__p5_p5_component__["a" /* P5Component */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */].forRoot(appRoutes, { enableTracing: true } // <-- debugging purposes only
             ),
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_6__angular_http__["b" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_2_ng2_scroll_to__["ScrollToModule"].forRoot()
         ],
-        providers: [],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
+        providers: [__WEBPACK_IMPORTED_MODULE_5__http_service_service__["a" /* HttpServiceService */]],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
@@ -224,6 +229,50 @@ BelowTheFoldComponent = __decorate([
 
 /***/ }),
 
+/***/ "../../../../../src/app/http-service.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HttpServiceService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var HttpServiceService = (function () {
+    function HttpServiceService(http) {
+        this.http = http;
+    }
+    HttpServiceService.prototype.getResume = function () {
+        return this.http.get('resumedownload', { responseType: __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* ResponseContentType */].Blob })
+            .map(function (res) {
+            return new Blob([res.blob()], { type: 'application/pdf' });
+        });
+    };
+    return HttpServiceService;
+}());
+HttpServiceService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _a || Object])
+], HttpServiceService);
+
+var _a;
+//# sourceMappingURL=http-service.service.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/jumbo/jumbo.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -245,7 +294,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/jumbo/jumbo.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron text-center\">\r\n  <div class=\"container\">\r\n    <span class=\"lang-logo\">\r\n      <img style='height: 100%; width: 100%; object-fit: contain' src=\"./assets/matt.png\">      \r\n    </span>\r\n    <h1>Welcome, Epic! Thanks for taking the time to visit.</h1>\r\n    <p><strong>This is just a way for me to introduce myself, and provide you with a small view into my life.  Have a look around.</strong></p>\r\n    <a routerLink=\"/whoiam\" class=\"btn btn-lg btn-default\" ><span class=\"glyphicon glyphicon-info-sign\"></span> Learn about who I am...</a>\r\n    <a routerLink=\"/whatido\" class=\"btn btn-lg btn-primary\" ><span class=\"glyphicon glyphicon-info-sign\"></span> Learn about what I do...</a>\r\n    \r\n  </div>\r\n  <a scrollTo href=\"#scrollToMe\" class=\"btn btn-primary btn-lg btn-block\"><span class=\"glyphicon glyphicon-triangle-bottom\"></span></a>\r\n</div>  "
+module.exports = "<div class=\"jumbotron text-center\">\r\n  <div class=\"container\">\r\n    <span class=\"lang-logo\">\r\n      <img style='height: 100%; width: 100%; object-fit: contain' src=\"./assets/matt.png\">      \r\n    </span>\r\n    <h1>Welcome, Epic! Thanks for taking the time to visit.</h1>\r\n    <p><strong>This is just a way for me to introduce myself, and provide you with a small view into my life.  Have a look around.</strong></p>\r\n    <a routerLink=\"/whoiam\" class=\"btn btn-lg btn-default\" ><span class=\"glyphicon glyphicon-info-sign\"></span> Learn about who I am.</a>\r\n    <a routerLink=\"/whatido\" class=\"btn btn-lg btn-primary\" ><span class=\"glyphicon glyphicon-info-sign\"></span> Learn about what I do.</a>\r\n    \r\n  </div>\r\n  <a scrollTo href=\"#scrollToMe\" class=\"btn btn-primary btn-lg btn-block\"><span class=\"glyphicon glyphicon-triangle-bottom\"></span></a>\r\n</div>  "
 
 /***/ }),
 
@@ -354,7 +403,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/* canvas{\r\n    width:100%;\r\n    height: 600px;\r\n} */", ""]);
+exports.push([module.i, "/* canvas{\r\n    width:100%;\r\n    height: 600px;\r\n} */\r\n\r\n#container{\r\n    max-width: 825px;\r\n}", ""]);
 
 // exports
 
@@ -367,7 +416,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/p5/p5.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n  <div class=\"row\">\n    <div class=\"col-md-4\">\n      <h3>\n        What's going on here?\n      </h3>\n      <p>\n        This is a simulation of evolution using a genetic algorithm that I implemented in JavaScript.\n        <br>\n        <br>\n        The first generation of wanderers are exactly that.  They have 2000 random moves assigned upon their\n        creation.  After all 2000 moves, the wanderer expires.\n        <br>\n        <br>\n        When a generation is about to leave our existence,\n        each wanderer is given value based on the performance (In this case, the goal is to get to the top right corner).  This level of performance is known as fitness, and is\n        determined using a fitness function that I wrote.  The wanderers with a fitness score in the top 50% are selected to pass\n        on their DNA, which in this case is their 2000 move set. \n        <br>\n        <br>\n        A new generation is born with DNA very similar to the top \n        peformers of the previous generation.\n        There are some more intricacies taken into account to prevent the population from degrading to a very poor\n        performance.  A lot more can be done to improve their performance and I plan to make this more \n        interactive to give visitors the ability to control the algorithm's variables.\n      </p>\n    </div>\n    <div class=\"col-md-8\">\n      <div id='container'></div>\n\n    </div>\n\n  </div>\n</div>"
+module.exports = "<div class=\"container-fluid\">\n  <div class=\"row\" style=\"margin:auto;\">\n    <div class=\"col-md-4\">\n      <h3>\n        What's going on here?\n      </h3>\n      <p>\n        This is a simulation of evolution using a genetic algorithm that I implemented in JavaScript.\n        <br>\n        <br>\n        The first generation of wanderers are exactly that.  They have 2000 random moves assigned upon their\n        creation.  After all 2000 moves, the wanderer expires.\n        <br>\n        <br>\n        When a generation is about to leave our existence,\n        each wanderer is given value based on the performance (In this case, the goal is to get to the top right corner).  This level of performance is known as fitness, and is\n        determined using a fitness function that I wrote.  The wanderers with a fitness score in the top 50% are selected to pass\n        on their DNA, which in this case is their 2000 move set. \n        <br>\n        <br>\n        A new generation is born with DNA very similar to the top \n        peformers of the previous generation.\n        There are some more intricacies taken into account to prevent the population from degrading to a very poor\n        performance.  A lot more can be done to improve their performance and I plan to make this more \n        interactive to give visitors the ability to control the algorithm's variables.\n      </p>\n    </div>\n    <div class=\"col-md-8\">\n      <div id='container'></div>\n\n    </div>\n\n  </div>\n</div>"
 
 /***/ }),
 
@@ -402,7 +451,7 @@ var P5Component = P5Component_1 = (function () {
             _this.p5ref.setup = function () {
                 _this.p5ref.frameRate(100);
                 var width = document.getElementById("container").offsetWidth;
-                _this.p5ref.createCanvas(width, document.documentElement.clientHeight - 100);
+                _this.p5ref.createCanvas(width, width * .65);
                 for (var i = 0; i < P5Component_1.NUM_OBSTACLES; i++) {
                     _this.obstacles.push(new Obstacle(_this.p5ref.width * (1 / (P5Component_1.NUM_OBSTACLES + 1)) * (i + 1), _this.p5ref));
                     ;
@@ -441,7 +490,7 @@ var P5Component = P5Component_1 = (function () {
         this.p5ref.mousePressed = function () { };
         this.p5ref.windowResized = function () {
             var width = document.getElementById("container").offsetWidth;
-            _this.p5ref.resizeCanvas(width, document.documentElement.clientHeight - 100);
+            _this.p5ref.resizeCanvas(width, width * .65);
             _this.p5ref.background(0);
             _this.drawObstacles();
         };
@@ -622,7 +671,7 @@ var Obstacle = (function () {
     function Obstacle(posX, p5ref) {
         this.posX = posX;
         this.p5ref = p5ref;
-        this.openingHeight = this.p5ref.random(100, document.documentElement.clientHeight - 200);
+        this.openingHeight = this.p5ref.random(.30 * (this.p5ref.height), this.p5ref.height - .30 * (this.p5ref.height));
     }
     Obstacle.prototype.getX = function () {
         return this.posX;
@@ -631,8 +680,8 @@ var Obstacle = (function () {
         return this.openingHeight;
     };
     Obstacle.prototype.draw = function () {
-        this.p5ref.rect(this.posX, 0, 15, this.openingHeight - 100);
-        this.p5ref.rect(this.posX, this.openingHeight + 100, 15, this.p5ref.height);
+        this.p5ref.rect(this.posX, 0, 15, this.openingHeight - .30 * (this.p5ref.height));
+        this.p5ref.rect(this.posX, this.openingHeight + .30 * (this.p5ref.height), 15, this.p5ref.height);
     };
     return Obstacle;
 }());
@@ -649,7 +698,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".resume-background{\r\n    background-color: #cccccc;\r\n    background-image: url(" + __webpack_require__("../../../../../src/assets/resumeBg.png") + ");\r\n    margin-top: -20px;\r\n}\r\n\r\n.twenty-px-padding-top{\r\n    padding-top:20px;\r\n    padding-bottom:45px;\r\n}\r\n\r\n\r\n/* Landscape */\r\n@media screen \r\nand (max-width: 640px) \r\nand (max-height: 360px) \r\nand (orientation: landscape) {\r\n    .twenty-px-padding-top{\r\n        padding-top:20px;\r\n      \r\n    }\r\n\r\n}", ""]);
+exports.push([module.i, ".resume-background{\r\n    background-color: #cccccc;\r\n    background-image: url(" + __webpack_require__("../../../../../src/assets/resumeBg.png") + ");\r\n    margin-top: -20px;\r\n}\r\n\r\n.twenty-px-padding-top{\r\n    padding-top:20px;\r\n    padding-bottom:45px;\r\n}\r\n\r\n.margin-top{\r\n    margin-top: 20px;\r\n    background: white;\r\n    border-color: black;\r\n}\r\n\r\n\r\n/* Landscape */\r\n@media screen \r\nand (max-width: 640px) \r\nand (max-height: 360px) \r\nand (orientation: landscape) {\r\n    .twenty-px-padding-top{\r\n        padding-top:20px;\r\n      \r\n    }\r\n\r\n}", ""]);
 
 // exports
 
@@ -662,7 +711,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/resume/resume.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"resume-background\">\n  <div class=\"container\">\n\n    <pdf-viewer class=\"twenty-px-padding-top\" [src]=\"pdfSrc\" [render-text]=\"true\" [original-size]=\"false\" style=\"display: block;\"></pdf-viewer>\n  </div>\n</div>"
+module.exports = "<div class=\"resume-background\">\n  <div class=\"container\">\n    <div class=\"btn btn-default margin-top\" (click)=\"download()\">\n      Download.\n    </div>\n    <pdf-viewer class=\"twenty-px-padding-top\" [src]=\"pdfSrc\" [render-text]=\"true\" [original-size]=\"false\" style=\"display: block;\"></pdf-viewer>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -672,6 +721,9 @@ module.exports = "<div class=\"resume-background\">\n  <div class=\"container\">
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResumeComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__http_service_service__ = __webpack_require__("../../../../../src/app/http-service.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_file_saver__ = __webpack_require__("../../../../file-saver/FileSaver.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_file_saver___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_file_saver__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -682,11 +734,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var ResumeComponent = (function () {
-    function ResumeComponent() {
+    function ResumeComponent(httpServ) {
+        this.httpServ = httpServ;
         this.pdfSrc = '../../assets/Resume.pdf';
     }
     ResumeComponent.prototype.ngOnInit = function () {
+    };
+    ResumeComponent.prototype.download = function () {
+        this.httpServ.getResume().subscribe(function (res) {
+            Object(__WEBPACK_IMPORTED_MODULE_2_file_saver__["saveAs"])(res, "MatthewWattsResume.pdf");
+            var fileURL = URL.createObjectURL(res);
+            window.open(fileURL);
+        });
     };
     return ResumeComponent;
 }());
@@ -696,9 +758,10 @@ ResumeComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/resume/resume.component.html"),
         styles: [__webpack_require__("../../../../../src/app/resume/resume.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__http_service_service__["a" /* HttpServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__http_service_service__["a" /* HttpServiceService */]) === "function" && _a || Object])
 ], ResumeComponent);
 
+var _a;
 //# sourceMappingURL=resume.component.js.map
 
 /***/ }),
