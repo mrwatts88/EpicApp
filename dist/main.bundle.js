@@ -403,7 +403,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/* canvas{\r\n    width:100%;\r\n    height: 600px;\r\n} */\r\n\r\n#container{\r\n    max-width: 825px;\r\n}\r\n", ""]);
+exports.push([module.i, "/* canvas{\r\n    width:100%;\r\n    height: 600px;\r\n} */\r\n", ""]);
 
 // exports
 
