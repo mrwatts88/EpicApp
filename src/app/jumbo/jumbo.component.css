@@ -78,12 +78,16 @@ and (max-width: 360px)
 and (max-height: 640px) 
 and (orientation: portrait) {
 
+  .buffer{
+    height: calc((100vh - 80px)*.09); 
+  }
+
   .jumbotron {
     background-image: url("../../assets/aoeu.png");
     background-size: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
-    height: calc(100vh - 60px) !important; 
+    height: calc(100vh - 70px) !important; 
      
   }
 
@@ -124,12 +128,16 @@ and (max-width: 640px)
 and (max-height: 360px) 
 and (orientation: landscape) {
 
+  .buffer{
+    height: calc((100vh - 80px)*.11); 
+  }
+
  .jumbotron {
     background-image: url("../../assets/aoeu.png");
     background-size: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
-    height: calc(100vh - 43px); 
+    height: calc(100vh - 53px); 
 
   }
 
