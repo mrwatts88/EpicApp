@@ -7,17 +7,20 @@
 and (max-width: 640px) 
 and (max-height: 360px) 
 and (orientation: landscape) {
-
-.nav>li{
-    float: left;
-
-
-}
-
-.navbar-nav{
-    margin: 0px -15px !important;
-  }
-
+    
+    .nav>li{
+        float: left;
+        
+        
+    }
+    
+    .navbar-nav{
+        margin: 0px -15px !important;
+    }
+    
+    .stocks{
+        display: none;
+    }
 }
 
 /* portrait */
@@ -30,8 +33,10 @@ and (orientation: portrait) {
     float: left;
     
 
-}}
+}
 
 .stocks{
     display: none;
 }
+}
+

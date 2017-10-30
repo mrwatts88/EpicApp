@@ -351,7 +351,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".navbar{\r\n    margin-top: -20px;\r\n   }\r\n\r\n   /* Landscape */\r\n@media screen \r\nand (max-width: 640px) \r\nand (max-height: 360px) \r\nand (orientation: landscape) {\r\n\r\n.nav>li{\r\n    float: left;\r\n\r\n\r\n}\r\n\r\n.navbar-nav{\r\n    margin: 0px -15px !important;\r\n  }\r\n\r\n}\r\n\r\n/* portrait */\r\n@media screen \r\nand (max-width: 360px) \r\nand (max-height: 640px) \r\nand (orientation: portrait) {\r\n\r\n.nav>li{\r\n    float: left;\r\n    \r\n\r\n}}\r\n\r\n.stocks{\r\n    display: none;\r\n}", ""]);
+exports.push([module.i, ".navbar{\r\n    margin-top: -20px;\r\n   }\r\n\r\n   /* Landscape */\r\n@media screen \r\nand (max-width: 640px) \r\nand (max-height: 360px) \r\nand (orientation: landscape) {\r\n    \r\n    .nav>li{\r\n        float: left;\r\n        \r\n        \r\n    }\r\n    \r\n    .navbar-nav{\r\n        margin: 0px -15px !important;\r\n    }\r\n    \r\n    .stocks{\r\n        display: none;\r\n    }\r\n}\r\n\r\n/* portrait */\r\n@media screen \r\nand (max-width: 360px) \r\nand (max-height: 640px) \r\nand (orientation: portrait) {\r\n\r\n.nav>li{\r\n    float: left;\r\n    \r\n\r\n}\r\n\r\n.stocks{\r\n    display: none;\r\n}\r\n}\r\n\r\n", ""]);
 
 // exports
 
