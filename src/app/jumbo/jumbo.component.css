@@ -5,6 +5,7 @@
     margin-top: -20px;   
     height: calc(100vh - 52px); 
     padding-top:0px;
+    overflow: hidden;
   }
 
 .jumbotron h1{
@@ -82,7 +83,7 @@ and (orientation: portrait) {
     background-size: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
-    height: calc(100vh - 52px); 
+    
      
   }
 
@@ -128,7 +129,7 @@ and (orientation: landscape) {
     background-size: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
-    height: calc(100vh - 52px); 
+    height: calc(100vh - 43px); 
 
   }
 
