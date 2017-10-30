@@ -76,10 +76,12 @@ export class P5Component implements OnInit {
     this.p5ref.mousePressed = () => { }
 
     this.p5ref.windowResized = () => {
-      let width = document.getElementById("container").offsetWidth
-      this.p5ref.resizeCanvas(width, width*.65);
-      this.p5ref.background(0);
-      this.drawObstacles();
+      try {
+        let width = document.getElementById("container").offsetWidth
+        this.p5ref.resizeCanvas(width, width*.65);
+        this.p5ref.background(0);
+        this.drawObstacles();        
+      } catch (error) { }
     }
   }
 

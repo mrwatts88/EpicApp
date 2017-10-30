@@ -16,6 +16,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ResumeComponent } from './resume/resume.component';
 import { WhoaComponent } from './whoa/whoa.component';
 import { P5Component } from './p5/p5.component';
+import { StockAnalyzerComponent } from './stock-analyzer/stock-analyzer.component';
 
 
 const appRoutes: Routes = [
@@ -24,6 +25,7 @@ const appRoutes: Routes = [
   { path: 'whatido', component: WhatIDoComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'whoa', component: WhoaComponent },
+  { path: 'stocks', component: StockAnalyzerComponent },
   {
     path: '',
     redirectTo: 'welcome',
@@ -44,7 +46,8 @@ const appRoutes: Routes = [
     ResumeComponent,
     WhoaComponent,
     PdfViewerComponent,
-    P5Component
+    P5Component,
+    StockAnalyzerComponent
   ],
   imports: [
     RouterModule.forRoot(

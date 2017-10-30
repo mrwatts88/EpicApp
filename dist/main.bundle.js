@@ -97,6 +97,7 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__resume_resume_component__ = __webpack_require__("../../../../../src/app/resume/resume.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__whoa_whoa_component__ = __webpack_require__("../../../../../src/app/whoa/whoa.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__p5_p5_component__ = __webpack_require__("../../../../../src/app/p5/p5.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__stock_analyzer_stock_analyzer_component__ = __webpack_require__("../../../../../src/app/stock-analyzer/stock-analyzer.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -120,12 +121,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var appRoutes = [
     { path: 'welcome', component: __WEBPACK_IMPORTED_MODULE_13__welcome_welcome_component__["a" /* WelcomeComponent */] },
     { path: 'whoiam', component: __WEBPACK_IMPORTED_MODULE_11__who_i_am_who_i_am_component__["a" /* WhoIAmComponent */] },
     { path: 'whatido', component: __WEBPACK_IMPORTED_MODULE_12__what_i_do_what_i_do_component__["a" /* WhatIDoComponent */] },
     { path: 'resume', component: __WEBPACK_IMPORTED_MODULE_14__resume_resume_component__["a" /* ResumeComponent */] },
     { path: 'whoa', component: __WEBPACK_IMPORTED_MODULE_15__whoa_whoa_component__["a" /* WhoaComponent */] },
+    { path: 'stocks', component: __WEBPACK_IMPORTED_MODULE_17__stock_analyzer_stock_analyzer_component__["a" /* StockAnalyzerComponent */] },
     {
         path: '',
         redirectTo: 'welcome',
@@ -150,7 +153,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_14__resume_resume_component__["a" /* ResumeComponent */],
             __WEBPACK_IMPORTED_MODULE_15__whoa_whoa_component__["a" /* WhoaComponent */],
             __WEBPACK_IMPORTED_MODULE_4_ng2_pdf_viewer__["PdfViewerComponent"],
-            __WEBPACK_IMPORTED_MODULE_16__p5_p5_component__["a" /* P5Component */]
+            __WEBPACK_IMPORTED_MODULE_16__p5_p5_component__["a" /* P5Component */],
+            __WEBPACK_IMPORTED_MODULE_17__stock_analyzer_stock_analyzer_component__["a" /* StockAnalyzerComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */].forRoot(appRoutes, { enableTracing: true } // <-- debugging purposes only
@@ -261,6 +265,11 @@ var HttpServiceService = (function () {
             return new Blob([res.blob()], { type: 'application/pdf' });
         });
     };
+    HttpServiceService.prototype.getStockData = function () {
+        return this.http.get('getStockData', { responseType: __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* ResponseContentType */].Json }).map(function (res) {
+            return res;
+        });
+    };
     return HttpServiceService;
 }());
 HttpServiceService = __decorate([
@@ -355,7 +364,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/navbar/navbar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<ul class=\"nav navbar-nav\">\n  <li class=\"welcome\">\n    <a routerLink=\"/welcome\" routerLinkActive=\"active\"><span class=\"glyphicon glyphicon-home\"></span> Welcome</a>\n  </li>\n  <li class=\"resume\">\n    <a routerLink=\"/resume\" routerLinkActive=\"active\"><span class=\"glyphicon glyphicon-user\"></span> Resume</a>\n  </li>\n  <li class=\"whoa\">\n    <a routerLink=\"/whoa\" routerLinkActive=\"active\"><span class=\"glyphicon glyphicon-flash\"></span> Whoa!!</a>\n  </li>\n</ul>"
+module.exports = "<ul class=\"nav navbar-nav\">\n  <li class=\"welcome\">\n    <a routerLink=\"/welcome\" routerLinkActive=\"active\"><span class=\"glyphicon glyphicon-home\"></span> Welcome</a>\n  </li>\n  <li class=\"resume\">\n    <a routerLink=\"/resume\" routerLinkActive=\"active\"><span class=\"glyphicon glyphicon-user\"></span> Resume</a>\n  </li>\n  <li class=\"whoa\">\n    <a routerLink=\"/whoa\" routerLinkActive=\"active\"><span class=\"glyphicon glyphicon-flash\"></span> Whoa!!</a>\n  </li>\n  <li class=\"stocs\">\n    <a routerLink=\"/stocks\" routerLinkActive=\"active\"><span class=\"glyphicon glyphicon-flash\"></span> $$$</a>\n  </li>\n</ul>"
 
 /***/ }),
 
@@ -489,10 +498,13 @@ var P5Component = P5Component_1 = (function () {
         var myp5 = new p5(sketch, 'container');
         this.p5ref.mousePressed = function () { };
         this.p5ref.windowResized = function () {
-            var width = document.getElementById("container").offsetWidth;
-            _this.p5ref.resizeCanvas(width, width * .65);
-            _this.p5ref.background(0);
-            _this.drawObstacles();
+            try {
+                var width = document.getElementById("container").offsetWidth;
+                _this.p5ref.resizeCanvas(width, width * .65);
+                _this.p5ref.background(0);
+                _this.drawObstacles();
+            }
+            catch (error) { }
         };
     };
     P5Component.prototype.drawObstacles = function () {
@@ -763,6 +775,76 @@ ResumeComponent = __decorate([
 
 var _a;
 //# sourceMappingURL=resume.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/stock-analyzer/stock-analyzer.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/stock-analyzer/stock-analyzer.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <div class=\"jumbotron\">\n    <div class=\"h1\">\n      Technical Stock Analyzer Coming Soon!\n    </div>\n    <div (click)=\"getStockData()\" class=\"btn btn-primary\">\n      Trust me. Open the dev tools then click here.\n    </div>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/stock-analyzer/stock-analyzer.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StockAnalyzerComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__http_service_service__ = __webpack_require__("../../../../../src/app/http-service.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var StockAnalyzerComponent = (function () {
+    function StockAnalyzerComponent(httpServ) {
+        this.httpServ = httpServ;
+    }
+    StockAnalyzerComponent.prototype.ngOnInit = function () {
+    };
+    StockAnalyzerComponent.prototype.getStockData = function () {
+        this.httpServ.getStockData().subscribe(function (res) {
+            console.log(res);
+        });
+    };
+    return StockAnalyzerComponent;
+}());
+StockAnalyzerComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-stock-analyzer',
+        template: __webpack_require__("../../../../../src/app/stock-analyzer/stock-analyzer.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/stock-analyzer/stock-analyzer.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__http_service_service__["a" /* HttpServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__http_service_service__["a" /* HttpServiceService */]) === "function" && _a || Object])
+], StockAnalyzerComponent);
+
+var _a;
+//# sourceMappingURL=stock-analyzer.component.js.map
 
 /***/ }),
 

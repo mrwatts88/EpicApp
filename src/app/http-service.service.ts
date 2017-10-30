@@ -16,4 +16,11 @@ export class HttpServiceService {
       })
   }
 
+  getStockData(){
+    return this.http.get('getStockData',{responseType: ResponseContentType.Json}).map((res) =>{
+      return res;
+    })
+  
+  }
+
 }
