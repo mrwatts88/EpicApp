@@ -28,6 +28,10 @@ and (orientation: portrait) {
 
 .nav>li{
     float: left;
-
+    
 
 }}
+
+.stocks{
+    display: none;
+}
