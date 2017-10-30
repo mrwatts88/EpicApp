@@ -67,7 +67,7 @@ top:-6px;
 }
 
 .buffer{
-  height: calc((100vh - 80px)*.13); 
+  height: calc((100vh - 80px)*.12); 
 }
 
 
@@ -83,7 +83,7 @@ and (orientation: portrait) {
     background-size: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
-    
+    height: calc(100vh - 60px) !important; 
      
   }
 
