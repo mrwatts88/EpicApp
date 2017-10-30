@@ -79,7 +79,7 @@ and (max-height: 640px)
 and (orientation: portrait) {
 
   .buffer{
-    height: calc((100vh - 80px)*.09); 
+    height: calc((100vh - 80px)*.06); 
   }
 
   .jumbotron {
@@ -129,7 +129,7 @@ and (max-height: 360px)
 and (orientation: landscape) {
 
   .buffer{
-    height: calc((100vh - 80px)*.11); 
+    height: calc((100vh - 80px)*.08); 
   }
 
  .jumbotron {
