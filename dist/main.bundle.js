@@ -87,17 +87,18 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_pdf_viewer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_ng2_pdf_viewer__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__http_service_service__ = __webpack_require__("../../../../../src/app/http-service.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__jumbo_jumbo_component__ = __webpack_require__("../../../../../src/app/jumbo/jumbo.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__below_the_fold_below_the_fold_component__ = __webpack_require__("../../../../../src/app/below-the-fold/below-the-fold.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__who_i_am_who_i_am_component__ = __webpack_require__("../../../../../src/app/who-i-am/who-i-am.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__what_i_do_what_i_do_component__ = __webpack_require__("../../../../../src/app/what-i-do/what-i-do.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__welcome_welcome_component__ = __webpack_require__("../../../../../src/app/welcome/welcome.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__resume_resume_component__ = __webpack_require__("../../../../../src/app/resume/resume.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__whoa_whoa_component__ = __webpack_require__("../../../../../src/app/whoa/whoa.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__p5_p5_component__ = __webpack_require__("../../../../../src/app/p5/p5.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__stock_analyzer_stock_analyzer_component__ = __webpack_require__("../../../../../src/app/stock-analyzer/stock-analyzer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__jumbo_jumbo_component__ = __webpack_require__("../../../../../src/app/jumbo/jumbo.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__below_the_fold_below_the_fold_component__ = __webpack_require__("../../../../../src/app/below-the-fold/below-the-fold.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__who_i_am_who_i_am_component__ = __webpack_require__("../../../../../src/app/who-i-am/who-i-am.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__what_i_do_what_i_do_component__ = __webpack_require__("../../../../../src/app/what-i-do/what-i-do.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__welcome_welcome_component__ = __webpack_require__("../../../../../src/app/welcome/welcome.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__resume_resume_component__ = __webpack_require__("../../../../../src/app/resume/resume.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__whoa_whoa_component__ = __webpack_require__("../../../../../src/app/whoa/whoa.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__p5_p5_component__ = __webpack_require__("../../../../../src/app/p5/p5.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__stock_analyzer_stock_analyzer_component__ = __webpack_require__("../../../../../src/app/stock-analyzer/stock-analyzer.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -122,13 +123,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var appRoutes = [
-    { path: 'welcome', component: __WEBPACK_IMPORTED_MODULE_13__welcome_welcome_component__["a" /* WelcomeComponent */] },
-    { path: 'whoiam', component: __WEBPACK_IMPORTED_MODULE_11__who_i_am_who_i_am_component__["a" /* WhoIAmComponent */] },
-    { path: 'whatido', component: __WEBPACK_IMPORTED_MODULE_12__what_i_do_what_i_do_component__["a" /* WhatIDoComponent */] },
-    { path: 'resume', component: __WEBPACK_IMPORTED_MODULE_14__resume_resume_component__["a" /* ResumeComponent */] },
-    { path: 'whoa', component: __WEBPACK_IMPORTED_MODULE_15__whoa_whoa_component__["a" /* WhoaComponent */] },
-    { path: 'stocks', component: __WEBPACK_IMPORTED_MODULE_17__stock_analyzer_stock_analyzer_component__["a" /* StockAnalyzerComponent */] },
+    { path: 'welcome', component: __WEBPACK_IMPORTED_MODULE_14__welcome_welcome_component__["a" /* WelcomeComponent */] },
+    { path: 'whoiam', component: __WEBPACK_IMPORTED_MODULE_12__who_i_am_who_i_am_component__["a" /* WhoIAmComponent */] },
+    { path: 'whatido', component: __WEBPACK_IMPORTED_MODULE_13__what_i_do_what_i_do_component__["a" /* WhatIDoComponent */] },
+    { path: 'resume', component: __WEBPACK_IMPORTED_MODULE_15__resume_resume_component__["a" /* ResumeComponent */] },
+    { path: 'whoa', component: __WEBPACK_IMPORTED_MODULE_16__whoa_whoa_component__["a" /* WhoaComponent */] },
+    { path: 'stocks', component: __WEBPACK_IMPORTED_MODULE_18__stock_analyzer_stock_analyzer_component__["a" /* StockAnalyzerComponent */] },
     {
         path: '',
         redirectTo: 'welcome',
@@ -143,28 +145,29 @@ var AppModule = (function () {
 AppModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__navbar_navbar_component__["a" /* NavbarComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__jumbo_jumbo_component__["a" /* JumboComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__below_the_fold_below_the_fold_component__["a" /* BelowTheFoldComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__who_i_am_who_i_am_component__["a" /* WhoIAmComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__what_i_do_what_i_do_component__["a" /* WhatIDoComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__welcome_welcome_component__["a" /* WelcomeComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__resume_resume_component__["a" /* ResumeComponent */],
-            __WEBPACK_IMPORTED_MODULE_15__whoa_whoa_component__["a" /* WhoaComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__navbar_navbar_component__["a" /* NavbarComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__jumbo_jumbo_component__["a" /* JumboComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__below_the_fold_below_the_fold_component__["a" /* BelowTheFoldComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__who_i_am_who_i_am_component__["a" /* WhoIAmComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__what_i_do_what_i_do_component__["a" /* WhatIDoComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__welcome_welcome_component__["a" /* WelcomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__resume_resume_component__["a" /* ResumeComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__whoa_whoa_component__["a" /* WhoaComponent */],
             __WEBPACK_IMPORTED_MODULE_4_ng2_pdf_viewer__["PdfViewerComponent"],
-            __WEBPACK_IMPORTED_MODULE_16__p5_p5_component__["a" /* P5Component */],
-            __WEBPACK_IMPORTED_MODULE_17__stock_analyzer_stock_analyzer_component__["a" /* StockAnalyzerComponent */]
+            __WEBPACK_IMPORTED_MODULE_17__p5_p5_component__["a" /* P5Component */],
+            __WEBPACK_IMPORTED_MODULE_18__stock_analyzer_stock_analyzer_component__["a" /* StockAnalyzerComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */].forRoot(appRoutes, { enableTracing: true } // <-- debugging purposes only
             ),
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_6__angular_http__["b" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_2_ng2_scroll_to__["ScrollToModule"].forRoot()
+            __WEBPACK_IMPORTED_MODULE_2_ng2_scroll_to__["ScrollToModule"].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_7__angular_forms__["a" /* FormsModule */]
         ],
         providers: [__WEBPACK_IMPORTED_MODULE_5__http_service_service__["a" /* HttpServiceService */]],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
@@ -265,8 +268,8 @@ var HttpServiceService = (function () {
             return new Blob([res.blob()], { type: 'application/pdf' });
         });
     };
-    HttpServiceService.prototype.getStockData = function () {
-        return this.http.get('getStockData', { responseType: __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* ResponseContentType */].Json }).map(function (res) {
+    HttpServiceService.prototype.getStockData = function (tickerSymbol, timeFrame) {
+        return this.http.get("getStockData/" + tickerSymbol + "/" + timeFrame, { responseType: __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* ResponseContentType */].Json }).map(function (res) {
             return res;
         });
     };
@@ -351,7 +354,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".navbar{\r\n    margin-top: -20px;\r\n   }\r\n\r\n   /* Landscape */\r\n@media screen \r\nand (max-width: 640px) \r\nand (max-height: 360px) \r\nand (orientation: landscape) {\r\n    \r\n    .nav>li{\r\n        float: left;\r\n        \r\n        \r\n    }\r\n    \r\n    .navbar-nav{\r\n        margin: 0px -15px !important;\r\n    }\r\n    \r\n    .stocks{\r\n        display: none;\r\n    }\r\n}\r\n\r\n/* portrait */\r\n@media screen \r\nand (max-width: 360px) \r\nand (max-height: 640px) \r\nand (orientation: portrait) {\r\n\r\n.nav>li{\r\n    float: left;\r\n    \r\n\r\n}\r\n\r\n.stocks{\r\n    display: none;\r\n}\r\n}\r\n\r\n", ""]);
+exports.push([module.i, ".navbar{\r\n    margin-top: -20px;\r\n    height: 50px;\r\n   }\r\n\r\n   /* Landscape */\r\n@media screen \r\nand (max-width: 640px) \r\nand (max-height: 360px) \r\nand (orientation: landscape) {\r\n    \r\n    .nav>li{\r\n        float: left;\r\n        \r\n        \r\n    }\r\n    \r\n    .navbar-nav{\r\n        margin: 0px -15px !important;\r\n    }\r\n    \r\n    .stocks{\r\n        display: none;\r\n    }\r\n}\r\n\r\n/* portrait */\r\n@media screen \r\nand (max-width: 360px) \r\nand (max-height: 640px) \r\nand (orientation: portrait) {\r\n\r\n.nav>li{\r\n    float: left;\r\n    \r\n\r\n}\r\n\r\n.stocks{\r\n    display: none;\r\n}\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -783,10 +786,10 @@ var _a;
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);", ""]);
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".wrapper {\r\n  \r\n    display: -webkit-box;\r\n  \r\n    display: -ms-flexbox;\r\n  \r\n    display: flex;    \r\n    -webkit-box-align: stretch;    \r\n        -ms-flex-align: stretch;    \r\n            align-items: stretch;\r\n    margin-top: -71px;\r\n}\r\n\r\n#sidebar.active {\r\n    margin-left: -250px;\r\n}\r\n\r\n#sidebar {\r\n    min-width: 250px;\r\n    max-width: 250px;\r\n    min-height: 100vh;\r\n    padding-top: 50px;\r\n}\r\n\r\na[data-toggle=\"collapse\"] {\r\n    position: relative;\r\n}\r\n\r\na[aria-expanded=\"false\"]::before, a[aria-expanded=\"true\"]::before {\r\n    content: '\\E259';\r\n    display: block;\r\n    position: absolute;\r\n    right: 20px;\r\n    font-family: 'Glyphicons Halflings';\r\n    font-size: 0.6em;\r\n}\r\n\r\na[aria-expanded=\"true\"]::before {\r\n    content: '\\E260';\r\n}\r\n\r\n@media (max-width: 768px) {\r\n    #sidebar {\r\n        margin-left: -250px;\r\n    }\r\n    #sidebar.active {\r\n        margin-left: 0;\r\n    }\r\n}\r\n\r\n\r\n\r\na, a:hover, a:focus {\r\n    color: inherit;\r\n    text-decoration: none;\r\n    transition: all 0.3s;\r\n}\r\n\r\n#sidebar {\r\n    background: #7386D5;\r\n    color: #fff;\r\n    transition: all 0.3s;\r\n}\r\n\r\n#sidebar .sidebar-header {\r\n    padding-left: 5px;\r\n}\r\n\r\n#sidebar ul.components {\r\n    padding: 20px 0;\r\n}\r\n\r\n#sidebar ul p {\r\n    color: #fff;\r\n    padding: 10px;\r\n}\r\n\r\n#sidebar ul li a {\r\n    padding: 10px;\r\n    font-size: 1.1em;\r\n    display: block;\r\n}\r\n#sidebar ul li a:hover {\r\n    color: #6d7fcc;\r\n    background: #fff;\r\n}\r\n\r\n#sidebar ul li.active > a, a[aria-expanded=\"true\"] {\r\n    color: #fff;\r\n    background: #6d7fcc;\r\n}\r\nul ul a {\r\n    font-size: 0.9em !important;\r\n    padding-left: 30px !important;\r\n}\r\n\r\n.container{\r\n    padding-top: 70px;\r\n}\r\n\r\n.max-100{\r\n    max-width: 100px;\r\n    \r\n}\r\n\r\n.padding-10{\r\n    padding: 10px 15px;\r\n  \r\n}\r\n\r\n.padding-top-10{\r\n    padding-top: 10px;\r\n}\r\n", ""]);
 
 // exports
 
@@ -799,7 +802,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/stock-analyzer/stock-analyzer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"jumbotron\">\n    <div class=\"h1\">\n      Technical Stock Analyzer Coming Soon!\n    </div>\n    <div (click)=\"getStockData()\" class=\"btn btn-primary\">\n      Trust me. Open the dev tools then click here.\n    </div>\n  </div>\n</div>"
+module.exports = "<!-- <div class=\"container\">\n  <div class=\"jumbotron\">\n    <div class=\"h1\">\n      Technical Stock Analyzer Coming Soon!\n    </div>\n    <div (click)=\"getStockData()\" class=\"btn btn-primary\">\n      Trust me. Open the dev tools then click here.\n    </div>\n  </div>\n</div> -->\n\n<div class=\"wrapper\">\n\n  <nav id=\"sidebar\">\n    <!-- Sidebar Header -->\n    <div class=\"sidebar-header\">\n      <h3>Choose a Strategy.</h3>\n    </div>\n\n    <!-- Sidebar Links -->\n    <ul class=\"list-unstyled components\">\n      <li class=\"active\">\n        <a href=\"#\">Gap Trading</a>\n      </li>\n      <li>\n        <a href=\"#\">High Frequency Arbitrage</a>\n      </li>\n      <li>\n        <a href=\"#\">MACD</a>\n      </li>\n      <li>\n        <a href=\"#\">Monkey w/ a Dart</a>\n      </li>\n    </ul>\n  </nav>\n\n  <!-- <div id=\"content\">\n    <button type=\"button\" id=\"sidebarCollapse\" class=\"btn btn-info navbar-btn\">\n      <i class=\"glyphicon glyphicon-align-left\"></i>\n      Toggle Sidebar\n    </button>\n  </div> -->\n  <div class=\"container\">\n\n    <div class=\"row\">\n      <div class=\"col-xs-9\">\n        ththeuaoeuoeuoi\n      </div>\n\n      \n      <div class=\"col-xs-3\">\n        <div class=\"row\">\n          <div class=\"form-group\">\n            <div class=\"col-md-6\">\n              <label for=\"stock-symbol\">Stock Symbol</label>\n            </div>\n            <div class=\"col-md-6\">\n              <input type=\"text\" class=\"form-control max-100\" id=\"stock-symbol\" placeholder=\"e.g. GOOG\" [(ngModel)]=\"tickerSymbol\">\n            </div>\n\n          </div>\n\n        </div>\n        <div class=\"row\">\n          <div class=\"form-group padding-top-10\">\n            <div class=\"col-md-6\">\n              <label for=\"time-frame\">Time Frame</label>\n            </div>\n            <div class=\"col-md-6 align-right\">\n              <select class=\"form-control max-100\" id=\"time-frame\" [(ngModel)]=\"timeFrame\">\n                <option>1 mo</option>\n                <option>3 mo</option>\n                <option>6 mo</option>\n                <option>1 yr</option>\n              </select>\n            </div>\n\n          </div>\n        </div>\n\n        <div class=\"row \">\n           \n          <div class=\"col-xs-12 padding-10\">\n            <button type=\"button\" class=\"btn btn-default btn-block\" (click)=\"analyze()\">Add</button>\n\n          </div>\n          \n        </div>\n\n\n      </div>\n    </div>\n  </div>\n\n</div>"
 
 /***/ }),
 
@@ -824,11 +827,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var StockAnalyzerComponent = (function () {
     function StockAnalyzerComponent(httpServ) {
         this.httpServ = httpServ;
+        this.tickerSymbol = '';
+        this.addedStocks = [];
+        this.timeFrame = "";
     }
     StockAnalyzerComponent.prototype.ngOnInit = function () {
     };
-    StockAnalyzerComponent.prototype.getStockData = function () {
-        this.httpServ.getStockData().subscribe(function (res) {
+    StockAnalyzerComponent.prototype.ngAfterViewInit = function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+    };
+    StockAnalyzerComponent.prototype.analyze = function () {
+        this.addedStocks.push(this.tickerSymbol);
+        console.log(this.addedStocks);
+        this.getStockData(this.tickerSymbol, this.timeFrame);
+    };
+    StockAnalyzerComponent.prototype.getStockData = function (tickerSymbol, timeFrame) {
+        this.httpServ.getStockData(tickerSymbol, timeFrame).subscribe(function (res) {
             console.log(res);
         });
     };

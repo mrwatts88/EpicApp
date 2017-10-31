@@ -10,11 +10,13 @@ app.use(express.static(__dirname + '/downloads'));
 
 app.get('/resumedownload', (req, res) => { res.download(__dirname + '/downloads/Resume.pdf', 'Resume.pdf'); })
 
-app.get('/getStockData', (req, res) => {
+app.get('/getStockData/:tickerSymbol/:timeFrame', (req, res) => {
+  let tickerSymbol = req.params.tickerSymbol.toLowerCase();
+  let timeFrame = req.params.timeFrame;
   let stockDataObjects = [];
   let stockData = [];
   
-  request('https://www.nasdaq.com/symbol/ibm/historical', (err, response, html) => {
+  request(`https://www.nasdaq.com/symbol/${tickerSymbol}/historical`, (err, response, html) => {
     if (!err && response.statusCode == 200) {
       let $ = cheerio.load(html);
       $("#historicalContainer").find("tr").each((i, el) => {

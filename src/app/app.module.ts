@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PdfViewerComponent } from 'ng2-pdf-viewer';
 import { HttpServiceService } from './http-service.service';
 import { HttpModule } from '@angular/http'
+import { NgModel, FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -56,7 +57,8 @@ const appRoutes: Routes = [
     ),
     BrowserModule,
     HttpModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    FormsModule
   ],
   providers: [ HttpServiceService],
   bootstrap: [AppComponent]

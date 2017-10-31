@@ -16,8 +16,8 @@ export class HttpServiceService {
       })
   }
 
-  getStockData(){
-    return this.http.get('getStockData',{responseType: ResponseContentType.Json}).map((res) =>{
+  getStockData(tickerSymbol, timeFrame){
+    return this.http.get(`getStockData/${tickerSymbol}/${timeFrame}`,{responseType: ResponseContentType.Json}).map((res) =>{
       return res;
     })
   

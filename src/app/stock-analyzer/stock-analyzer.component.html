@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <div class="jumbotron">
     <div class="h1">
       Technical Stock Analyzer Coming Soon!
@@ -7,4 +7,89 @@
       Trust me. Open the dev tools then click here.
     </div>
   </div>
+</div> -->
+
+<div class="wrapper">
+
+  <nav id="sidebar">
+    <!-- Sidebar Header -->
+    <div class="sidebar-header">
+      <h3>Choose a Strategy.</h3>
+    </div>
+
+    <!-- Sidebar Links -->
+    <ul class="list-unstyled components">
+      <li class="active">
+        <a href="#">Gap Trading</a>
+      </li>
+      <li>
+        <a href="#">High Frequency Arbitrage</a>
+      </li>
+      <li>
+        <a href="#">MACD</a>
+      </li>
+      <li>
+        <a href="#">Monkey w/ a Dart</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- <div id="content">
+    <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+      <i class="glyphicon glyphicon-align-left"></i>
+      Toggle Sidebar
+    </button>
+  </div> -->
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xs-9">
+        ththeuaoeuoeuoi
+      </div>
+
+      
+      <div class="col-xs-3">
+        <div class="row">
+          <div class="form-group">
+            <div class="col-md-6">
+              <label for="stock-symbol">Stock Symbol</label>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control max-100" id="stock-symbol" placeholder="e.g. GOOG" [(ngModel)]="tickerSymbol">
+            </div>
+
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="form-group padding-top-10">
+            <div class="col-md-6">
+              <label for="time-frame">Time Frame</label>
+            </div>
+            <div class="col-md-6 align-right">
+              <select class="form-control max-100" id="time-frame" [(ngModel)]="timeFrame">
+                <option>1 mo</option>
+                <option>3 mo</option>
+                <option>6 mo</option>
+                <option>1 yr</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row ">
+           
+          <div class="col-xs-12 padding-10">
+            <button type="button" class="btn btn-default btn-block" (click)="analyze()">Add</button>
+
+          </div>
+          
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
 </div>
