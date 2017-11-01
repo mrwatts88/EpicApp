@@ -27,18 +27,25 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-9">
+        <div class="jumbotron">
+          This is small project I've just started. It's purpose is to analyze the performance of various
+          stock trading techniques.  For my first Bachelor's degree I majored in Finance,
+          and followed that with an MBA concentrating in investment management.  I am fascinated
+          by the movement of money around the world, and am glad to be able to combine my passion
+          for computer science with my other interests.
+        </div>
           <div [ngSwitch]="strategyDisplayed">
               <div *ngSwitchCase="'gap'">
                <app-gap-trading></app-gap-trading>
               </div>
               <div *ngSwitchCase="'hft'">
-                {{strategyDisplayed}}
+                HFT not yet implemented.
               </div>
               <div *ngSwitchCase="'macd'">
-                {{strategyDisplayed}}
+                  MACD not yet implemented.
               </div>
               <div *ngSwitchCase="'monkey'">
-                {{strategyDisplayed}}
+                Monkey not yet implemented.
               </div>
             </div>
       </div>
