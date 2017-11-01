@@ -6,6 +6,7 @@ import { PdfViewerComponent } from 'ng2-pdf-viewer';
 import { HttpServiceService } from './http-service.service';
 import { HttpModule } from '@angular/http'
 import { NgModel, FormsModule } from '@angular/forms';
+import { NgSwitch, CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -18,6 +19,8 @@ import { ResumeComponent } from './resume/resume.component';
 import { WhoaComponent } from './whoa/whoa.component';
 import { P5Component } from './p5/p5.component';
 import { StockAnalyzerComponent } from './stock-analyzer/stock-analyzer.component';
+import { StockTechniqueComponent } from './stock-technique/stock-technique.component';
+import { GapTradingComponent } from './gap-trading/gap-trading.component';
 
 
 const appRoutes: Routes = [
@@ -48,7 +51,9 @@ const appRoutes: Routes = [
     WhoaComponent,
     PdfViewerComponent,
     P5Component,
-    StockAnalyzerComponent
+    StockAnalyzerComponent,
+    StockTechniqueComponent,
+    GapTradingComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -58,7 +63,8 @@ const appRoutes: Routes = [
     BrowserModule,
     HttpModule,
     ScrollToModule.forRoot(),
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
   providers: [ HttpServiceService],
   bootstrap: [AppComponent]

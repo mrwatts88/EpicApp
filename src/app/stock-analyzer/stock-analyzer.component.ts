@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpServiceService } from '../http-service.service';
-declare var $:any;  
+declare var $: any;
 
 @Component({
   selector: 'app-stock-analyzer',
@@ -9,9 +9,11 @@ declare var $:any;
 })
 export class StockAnalyzerComponent implements OnInit {
 
-  tickerSymbol:String = '';
-  addedStocks:String[] = [];
+  tickerSymbol: String = '';
+  addedStocks: String[] = [];
   timeFrame = "";
+  strategyDisplayed = 'gap';
+
   constructor(private httpServ: HttpServiceService) { }
 
   ngOnInit() {
@@ -24,16 +26,27 @@ export class StockAnalyzerComponent implements OnInit {
     });
   }
 
-  analyze(){
-    this.addedStocks.push(this.tickerSymbol);
-    console.log(this.addedStocks);
-    this.getStockData(this.tickerSymbol,this.timeFrame);
+  analyze() {
+    if (this.addedStocks.indexOf(this.tickerSymbol) == -1 && this.tickerSymbol != '') {
+      this.addedStocks.push(this.tickerSymbol);
+      this.tickerSymbol = '';
+      this.getStockData(this.tickerSymbol, this.timeFrame);
+    }   
   }
 
-  getStockData(tickerSymbol:String, timeFrame ) {
+  getStockData(tickerSymbol: String, timeFrame) {
     this.httpServ.getStockData(tickerSymbol, timeFrame).subscribe(res => {
       console.log(res);
     })
+  }
+
+  removeStock(stock){
+    this.addedStocks.splice(stock,1);
+    console.log(stock);
+  }
+
+  setStrategySwitch(strategy){
+    this.strategyDisplayed = strategy;
   }
 
 }
