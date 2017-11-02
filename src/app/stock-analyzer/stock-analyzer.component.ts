@@ -29,8 +29,8 @@ export class StockAnalyzerComponent implements OnInit {
   analyze() {
     if (this.addedStocks.indexOf(this.tickerSymbol) == -1 && this.tickerSymbol != '') {
       this.addedStocks.push(this.tickerSymbol);
-      this.tickerSymbol = '';
       this.getStockData(this.tickerSymbol, this.timeFrame);
+      this.tickerSymbol = '';
     }   
   }
 
