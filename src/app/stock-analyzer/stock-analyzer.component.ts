@@ -11,7 +11,7 @@ export class StockAnalyzerComponent implements OnInit {
 
   tickerSymbol: String = '';
   addedStocks: String[] = [];
-  timeFrame = "";
+  timeFrame = "1 mo";
   strategyDisplayed = 'gap';
 
   constructor(private httpServ: HttpServiceService) { }
@@ -42,7 +42,6 @@ export class StockAnalyzerComponent implements OnInit {
 
   removeStock(stock){
     this.addedStocks.splice(stock,1);
-    console.log(stock);
   }
 
   setStrategySwitch(strategy){

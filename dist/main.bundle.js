@@ -899,7 +899,7 @@ var StockAnalyzerComponent = (function () {
         this.httpServ = httpServ;
         this.tickerSymbol = '';
         this.addedStocks = [];
-        this.timeFrame = "";
+        this.timeFrame = "1 mo";
         this.strategyDisplayed = 'gap';
     }
     StockAnalyzerComponent.prototype.ngOnInit = function () {
@@ -923,7 +923,6 @@ var StockAnalyzerComponent = (function () {
     };
     StockAnalyzerComponent.prototype.removeStock = function (stock) {
         this.addedStocks.splice(stock, 1);
-        console.log(stock);
     };
     StockAnalyzerComponent.prototype.setStrategySwitch = function (strategy) {
         this.strategyDisplayed = strategy;
